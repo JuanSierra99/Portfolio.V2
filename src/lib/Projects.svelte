@@ -1,0 +1,104 @@
+<script>
+  import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
+  import IconHeart from "~icons/mdi/heart";
+  import IconPhone from "~icons/mdi/cellphone";
+  import IconCamera from "~icons/mdi/camera";
+  import IconMoney from "~icons/mdi/money-100";
+</script>
+
+<Accordion autocollapse>
+  <AccordionItem open>
+    <svelte:fragment slot="lead">
+      <IconHeart class="text-pink-300 w-5" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">You Will Be Mine</svelte:fragment>
+    <svelte:fragment slot="content">
+      <p>
+        💘 Introducing "You Will Be My Valentine" - A labor of love crafted with
+        Svelte. 💘 Choosing not to use any external libraries really helped in
+        deepening my understanding of Svelte and its capabilities. `
+      </p>
+      <img src="/kaboom.gif" class="rounded-md" alt="gif of my confetti website" />
+      <a
+        class="w-full btn variant-filled-tertiary block ml-auto mr-auto"
+        href="https://github.com/JuanSierra99/you-will-be-mine">Visit Repo</a
+      ></svelte:fragment
+    >
+  </AccordionItem>
+
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><img src="/buddy.webp" class="w-5 h-auto" alt="bucket buddy logo" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">Bucket Buddy</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class="">
+        A web app that allows users to organize their life by giving them a
+        simple way to create lists that can help them keep track of tasks they
+        would like to complete. Bucket Buddy is designed to help individuals who
+        struggle with managing their goals.
+      </span>
+      <img src="/bucket-buddy-home.webp" class="rounded-md" alt="bucket buddy website homepage"/>
+      <a
+        class="w-full btn variant-filled-tertiary block ml-auto mr-auto"
+        href="https://github.com/JuanSierra99/BucketBuddy">Visit Repo</a
+      >
+    </svelte:fragment>
+  </AccordionItem>
+
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconPhone class="text-blue-300" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">Decibel Warrior</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class="">
+        The thrilling mobile app that keeps you on your toes! Keep your finger
+        within the moving radius, or face the hilarious consequence of an audio
+        clip featuring a man's uproarious yelling. Stay sharp, stay entertained,
+        and stay on the screen with "Decible Warrior"!
+      </span>
+      <img src="/decibel-warrior.webp" class="rounded-md" alt="decibel warrior mobile game welcome screen"/>
+      <a
+        class="w-full btn variant-filled-tertiary block ml-auto mr-auto"
+        href="https://github.com/JuanSierra99/decibel_warrior">Visit Repo</a
+      >
+    </svelte:fragment>
+  </AccordionItem>
+
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconCamera class="text-purple-200" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">AI Film Site</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class="">
+        A web app for maintaining a collection of your favorite film photos. The
+        custom api is built with python and uses machine learning for object
+        recognition, Numpy for image masking, and openai api for image editing
+        using artifical intelligence. Simple to use, and pleasent to view.
+      </span>
+      <img src="/film-website.webp" class="rounded-md" alt="film gallery website"/>
+      <a
+        class="w-full btn variant-filled-tertiary block ml-auto mr-auto"
+        href="https://github.com/JuanSierra99/Film-Site">Visit Repo</a
+      >
+    </svelte:fragment>
+  </AccordionItem>
+
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconMoney class="text-green-400" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">Accounting Website</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class=""> </span>
+      <img src="/bills-invoices.gif" class="rounded-md" alt="Accounting website demo"/>
+      <a
+        class="w-full btn variant-filled-tertiary block ml-auto mr-auto"
+        href="https://github.com/JuanSierra99/Stock-Analyzer">Visit Repo</a
+      >
+    </svelte:fragment>
+  </AccordionItem>
+  <!-- ... -->
+</Accordion>
