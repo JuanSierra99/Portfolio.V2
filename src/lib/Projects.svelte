@@ -4,13 +4,29 @@
   import IconPhone from "~icons/mdi/cellphone";
   import IconCamera from "~icons/mdi/camera";
   import IconMoney from "~icons/mdi/money-100";
+  import IconDollarSymbol from "~icons/mdi/attach-money";
   import IconDog from "~icons/mdi/dog";
+  import IconStock from "~icons/mdi/chart-line";
+  import IconPeople from "~icons/mdi/people-add";
+  import IconRobotLove from "~icons/mdi/robot-love-outline";
 
-  const repoLinkStyles =
-    "w-fit btn variant-filled-tertiary block ml-auto mr-auto mt-3";
+  let accordionRef;
+
+  const repoLinkStyles = "w-fit btn bg-tertiary-600 block ml-auto mr-auto mt-3";
 </script>
 
+<img src="/valueglance.webp" class="hidden" alt="Preload Image" />
+<img src="/bucketbuddy-homepage.webp" class="hidden" alt="Preload Image" />
+<!-- <img src="/hanging_spot.webp" class="hidden" alt="Preload Image" /> -->
+<img src="/portfolio.v1.webp" class="hidden" />
+<img src="/octech.webp" class="hidden" />
+<img src="/kaboom.gif" class="hidden" alt="Preload Image" />
+<!-- <img src="/decibel-warrior.webp" class="hidden" alt="Preload Image" /> -->
+<!-- <img src="/film-website.webp" class="hidden" alt="Preload Image" /> -->
+<!-- <img src="/bills-invoices.gif" class="hidden" alt="Preload Image" /> -->
+
 <Accordion>
+  <!-- Value Glance -->
   <AccordionItem>
     <svelte:fragment slot="lead"
       ><IconDollarSymbol class="text-emerald-400" /></svelte:fragment
@@ -46,10 +62,13 @@
     <svelte:fragment slot="summary">Bucket Buddy</svelte:fragment>
     <svelte:fragment slot="content">
       <p>
-        A web app that allows users to organize their life by giving them a
-        simple way to create lists that can help them keep track of tasks they
-        would like to complete. Bucket Buddy is designed to help individuals who
-        struggle with managing their goals.
+        A Fullstack project that allows users to organize their life by giving
+        them a simple way to create lists that can help them keep track of tasks
+        they would like to complete. Bucket Buddy is designed to help
+        individuals who struggle with managing their goals. This is the recent
+        redesign of the landing page, though i can't host it on my EC2 server
+        right now because i can't afford to let Jeff Bezos take whatever money i
+        have left.
       </p>
       <div class="relative pt-5">
         <img
@@ -70,6 +89,53 @@
     </svelte:fragment>
   </AccordionItem>
 
+  <!--Portfolio V1 -->
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconRobotLove class="text-red-400" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">OG Portfolio</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class="">
+        I wanted to stick with just HTML, CSS, and JavaScript for this one. It
+        was a great learning experience, and I had so much designing it all from
+        scratch. It also made me appreciate why frameworks are so
+        handy—components are awesome and way more readable!
+      </span>
+      <img
+        src="/portfolio.v1.webp"
+        class="rounded-md"
+        alt="decibel warrior mobile game welcome screen"
+      />
+      <a class={repoLinkStyles} href="https://juansierra99.github.io"
+        >Visit Site</a
+      >
+    </svelte:fragment>
+  </AccordionItem>
+
+  <!-- OC TECH LINK UP -->
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconPeople class="text-[#eae2b7]" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">OC Tech</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class=""
+        >Designed and developed with WordPress, this landing page features a
+        stunning design and includes relevant links to connect and engage with
+        the tech community in Orange County. It’s crafted to bring people
+        together and foster networking within the local tech scene.
+      </span>
+      <img
+        src="/octech.webp"
+        class="rounded-md"
+        alt="orange county tech meetup"
+      />
+      <a class={repoLinkStyles} href="https://octechlinkup.com/">Visit Site</a>
+    </svelte:fragment>
+  </AccordionItem>
+
+  <!-- YOU WILL BE MINE -->
   <AccordionItem>
     <svelte:fragment slot="lead">
       <IconHeart class="text-pink-300 w-5" /></svelte:fragment
@@ -97,6 +163,82 @@
     >
   </AccordionItem>
 
+  <!-- STOCK ANALYZER -->
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconStock class="text-orange-400" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">Stock Analyzer</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class=""
+        >This is a financial graphing application that utilizes Vite, React, and
+        Chart.js to display historical data from the AlphaVantage API. Value
+        Glance was my inspiration for this project.
+      </span>
+      <img
+        src="/Bargraph.webp"
+        class="rounded-md"
+        alt="Accounting website demo"
+      />
+      <a
+        class={repoLinkStyles}
+        href="https://github.com/JuanSierra99/Stock-Analyzer">Visit Repo</a
+      >
+    </svelte:fragment>
+  </AccordionItem>
+
+  <!-- ACCOUNTING WEBSSITE -->
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconMoney class="text-green-400" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">Accounting Website</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class=""
+        >The primary goal of this project was to demonstrate a well-rounded
+        skill set in full-stack development, encompassing both backend and
+        frontend domains. The backend is engineered using Node.js with NestJS,
+        integrating Prisma ORM for sophisticated data handling. The frontend,
+        developed with React and enriched by TypeScript's type safety, offers a
+        seamless user experience for interacting with financial records.</span
+      >
+      <img
+        src="/bills-invoices.gif"
+        class="rounded-md"
+        alt="Accounting website demo"
+      />
+      <a
+        class={repoLinkStyles}
+        href="https://github.com/JuanSierra99/Accounting-Website">Visit Repo</a
+      >
+    </svelte:fragment>
+  </AccordionItem>
+
+  <!-- AI FILM SITE -->
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconCamera class="text-purple-400" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">AI Film Site</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span class="">
+        A web app for maintaining a collection of your favorite film photos. The
+        custom api is built with python and uses machine learning for object
+        recognition, Numpy for image masking, and openai api for image editing
+        using artifical intelligence. Simple to use, and pleasent to view.
+      </span>
+      <img
+        src="/film-website.webp"
+        class="rounded-md"
+        alt="film gallery website"
+      />
+      <a class={repoLinkStyles} href="https://github.com/JuanSierra99/Film-Site"
+        >Visit Repo</a
+      >
+    </svelte:fragment>
+  </AccordionItem>
+
+  <!-- DECIBEL WARRIOR -->
   <AccordionItem>
     <svelte:fragment slot="lead"
       ><IconPhone class="text-sky-300" /></svelte:fragment
@@ -118,48 +260,6 @@
       <a
         class={repoLinkStyles}
         href="https://github.com/JuanSierra99/decibel_warrior">Visit Repo</a
-      >
-    </svelte:fragment>
-  </AccordionItem>
-
-  <AccordionItem>
-    <svelte:fragment slot="lead"
-      ><IconCamera class="text-orange-400" /></svelte:fragment
-    >
-    <svelte:fragment slot="summary">AI Film Site</svelte:fragment>
-    <svelte:fragment slot="content">
-      <span class="">
-        A web app for maintaining a collection of your favorite film photos. The
-        custom api is built with python and uses machine learning for object
-        recognition, Numpy for image masking, and openai api for image editing
-        using artifical intelligence. Simple to use, and pleasent to view.
-      </span>
-      <img
-        src="/film-website.webp"
-        class="rounded-md"
-        alt="film gallery website"
-      />
-      <a class={repoLinkStyles} href="https://github.com/JuanSierra99/Film-Site"
-        >Visit Repo</a
-      >
-    </svelte:fragment>
-  </AccordionItem>
-
-  <AccordionItem>
-    <svelte:fragment slot="lead"
-      ><IconMoney class="text-green-400" /></svelte:fragment
-    >
-    <svelte:fragment slot="summary">Accounting Website</svelte:fragment>
-    <svelte:fragment slot="content">
-      <span class=""> </span>
-      <img
-        src="/bills-invoices.gif"
-        class="rounded-md"
-        alt="Accounting website demo"
-      />
-      <a
-        class={repoLinkStyles}
-        href="https://github.com/JuanSierra99/Stock-Analyzer">Visit Repo</a
       >
     </svelte:fragment>
   </AccordionItem>
