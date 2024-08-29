@@ -19,7 +19,7 @@
           LinkedIn
         </a>
         <a
-          class="btn btn-sm variant-filled-tertiary"
+          class="btn btn-sm bg-tertiary-600"
           href="https://github.com/JuanSierra99"
           target="_blank"
           rel="noreferrer"
