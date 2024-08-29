@@ -4,10 +4,13 @@
   import IconPhone from "~icons/mdi/cellphone";
   import IconCamera from "~icons/mdi/camera";
   import IconMoney from "~icons/mdi/money-100";
+  import IconDog from "~icons/mdi/dog"
+
+  const contentStyles = ""
 </script>
 
-<Accordion autocollapse>
-  <AccordionItem open>
+<Accordion>
+  <AccordionItem>
     <svelte:fragment slot="lead">
       <IconHeart class="text-pink-300 w-5" /></svelte:fragment
     >
@@ -18,17 +21,17 @@
         Svelte. 💘 Choosing not to use any external libraries really helped in
         deepening my understanding of Svelte and its capabilities. `
       </p>
-      <img src="/kaboom.gif" class="rounded-md" alt="gif of my confetti website" />
+      <img src="/kaboom.gif" class="rounded-sm w-full ml-auto mr-auto aspect-video" alt="gif of my confetti website" />
       <a
-        class="w-full btn variant-filled-tertiary block ml-auto mr-auto"
+        class="w-fit btn variant-filled-tertiary block ml-auto mr-auto"
         href="https://github.com/JuanSierra99/you-will-be-mine">Visit Repo</a
       ></svelte:fragment
     >
   </AccordionItem>
 
-  <AccordionItem>
+  <AccordionItem open>
     <svelte:fragment slot="lead"
-      ><img src="/buddy.webp" class="w-5 h-auto" alt="bucket buddy logo" /></svelte:fragment
+      ><IconDog class="text-yellow-300"/></svelte:fragment
     >
     <svelte:fragment slot="summary">Bucket Buddy</svelte:fragment>
     <svelte:fragment slot="content">
@@ -38,7 +41,11 @@
         would like to complete. Bucket Buddy is designed to help individuals who
         struggle with managing their goals.
       </span>
-      <img src="/bucket-buddy-home.webp" class="rounded-md" alt="bucket buddy website homepage"/>
+      <div class="relative pt-5">
+        <img src="/hanging_spot.webp" class="h-[50px] w-auto absolute translate-y-[-35px] right-0" alt="spotted dog with tounge out"/>
+        <img src="/hanging_bern.webp" class="h-[50px] w-auto absolute translate-y-[-35px] right-[75px]" alt="brown dog with tounge out">
+        <img src="/bucketbuddy-homepage.webp" class="rounded-md" alt="bucket buddy website homepage"/>
+      </div>
       <a
         class="w-full btn variant-filled-tertiary block ml-auto mr-auto"
         href="https://github.com/JuanSierra99/BucketBuddy">Visit Repo</a
@@ -48,7 +55,7 @@
 
   <AccordionItem>
     <svelte:fragment slot="lead"
-      ><IconPhone class="text-blue-300" /></svelte:fragment
+      ><IconPhone class="text-sky-300" /></svelte:fragment
     >
     <svelte:fragment slot="summary">Decibel Warrior</svelte:fragment>
     <svelte:fragment slot="content">
@@ -68,7 +75,7 @@
 
   <AccordionItem>
     <svelte:fragment slot="lead"
-      ><IconCamera class="text-purple-200" /></svelte:fragment
+      ><IconCamera class="text-orange-400" /></svelte:fragment
     >
     <svelte:fragment slot="summary">AI Film Site</svelte:fragment>
     <svelte:fragment slot="content">
@@ -100,5 +107,4 @@
       >
     </svelte:fragment>
   </AccordionItem>
-  <!-- ... -->
 </Accordion>
