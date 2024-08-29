@@ -4,7 +4,7 @@
   import Skills from "$lib/Skills.svelte";
 </script>
 
-<div class="container mx-auto p-8 space-y-8">
+<div class="container mx-auto p-8 space-y-8 max-w-3xl">
   <div class="flex w-full justify-between items-center">
     <h1 class="h1">Juan</h1>
     <Avatar src="/juan.png" class="inline" />
