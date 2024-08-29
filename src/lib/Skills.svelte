@@ -76,7 +76,7 @@ const skills: AutocompleteOption<string>[] = [
     placeholder="Search..."
   />
   <div
-    class=" w-full justify-around max-w-full max-h-screen p-4 overflow-y-auto"
+    class=" w-full max-w-full max-h-screen overflow-y-auto"
     tabindex="-1"
   >
     <Autocomplete bind:input={inputDemo} options={skills} />
