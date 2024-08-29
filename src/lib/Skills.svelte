@@ -1,7 +1,9 @@
 <script lang="ts">
       import { Autocomplete } from "@skeletonlabs/skeleton";
       import type { AutocompleteOption } from "@skeletonlabs/skeleton";
-      let inputDemo = "";
+      import { RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
+
+      let skillFilter: string = "";
 
 const skills: AutocompleteOption<string>[] = [
   {
@@ -68,16 +70,15 @@ const skills: AutocompleteOption<string>[] = [
 </script>
 
 <h2 class="font-bold text-3xl">Skills</h2>
-<input
-    class="w-full bg-transparent border-purple-400 border p-4 rounded-3xl"
-    type="search"
-    name="demo"
-    bind:value={inputDemo}
-    placeholder="Search..."
-  />
   <div
     class=" w-full max-w-full max-h-screen overflow-y-auto"
     tabindex="-1"
   >
-    <Autocomplete bind:input={inputDemo} options={skills} />
+    <RadioGroup display="flex" >
+    <RadioItem bind:group={skillFilter} name={"Filter"} value={""}>All</RadioItem>
+    <RadioItem bind:group={skillFilter} name={"Filter"} value={"frontend"}>Frontend</RadioItem>
+    <RadioItem bind:group={skillFilter} name={"Filter"} value={"backend"}>Backend</RadioItem>
+    <RadioItem bind:group={skillFilter} name={"Filter"} value={"languages"}>Languages</RadioItem>
+  </RadioGroup>
+    <Autocomplete bind:input={skillFilter} options={skills} />
   </div>
