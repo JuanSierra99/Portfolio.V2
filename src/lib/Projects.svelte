@@ -13,6 +13,34 @@
 <Accordion>
   <AccordionItem>
     <svelte:fragment slot="lead"
+      ><IconDollarSymbol class="text-emerald-400" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">Value Glance</svelte:fragment>
+    <svelte:fragment slot="content">
+      <p>
+        During my time at First Principles Publishing, I contributed to
+        valueglance.com by applying my React and Tailwind skills. I made
+        meaningful contributions to the product and had the opportunity to work
+        closely with the design team to enhance both functionality and design.
+      </p>
+      <p>
+        Here’s a snippet of the Manage Subscription page I implemented. This
+        page is crucial for displaying users' current subscription and billing
+        data and guiding them to Stripe for subscription management or
+        configuration.
+      </p>
+      <img
+        src="/valueglance.webp"
+        class="rounded-md"
+        alt="Accounting website demo"
+      />
+      <a class={repoLinkStyles} href="https://valueglance.com/">Visit Site</a>
+    </svelte:fragment>
+  </AccordionItem>
+
+  <!-- BUCKET BUDDY -->
+  <AccordionItem bind:this={accordionRef}>
+    <svelte:fragment slot="lead"
       ><IconDog class="text-yellow-300" /></svelte:fragment
     >
     <svelte:fragment slot="summary">Bucket Buddy</svelte:fragment>
