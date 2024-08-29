@@ -10,25 +10,6 @@
 </script>
 
 <Accordion>
-  <AccordionItem>
-    <svelte:fragment slot="lead">
-      <IconHeart class="text-pink-300 w-5" /></svelte:fragment
-    >
-    <svelte:fragment slot="summary">You Will Be Mine</svelte:fragment>
-    <svelte:fragment slot="content">
-      <p>
-        💘 Introducing "You Will Be My Valentine" - A labor of love crafted with
-        Svelte. 💘 Choosing not to use any external libraries really helped in
-        deepening my understanding of Svelte and its capabilities. `
-      </p>
-      <img src="/kaboom.gif" class="rounded-sm w-full ml-auto mr-auto aspect-video" alt="gif of my confetti website" />
-      <a
-        class="w-fit btn variant-filled-tertiary block ml-auto mr-auto"
-        href="https://github.com/JuanSierra99/you-will-be-mine">Visit Repo</a
-      ></svelte:fragment
-    >
-  </AccordionItem>
-
   <AccordionItem open>
     <svelte:fragment slot="lead"
       ><IconDog class="text-yellow-300"/></svelte:fragment
@@ -51,6 +32,25 @@
         href="https://github.com/JuanSierra99/BucketBuddy">Visit Repo</a
       >
     </svelte:fragment>
+  </AccordionItem>
+
+  <AccordionItem>
+    <svelte:fragment slot="lead">
+      <IconHeart class="text-pink-300 w-5" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">You Will Be Mine</svelte:fragment>
+    <svelte:fragment slot="content">
+      <p>
+        💘 Introducing "You Will Be My Valentine" - A labor of love crafted with
+        Svelte. 💘 Choosing not to use any external libraries really helped in
+        deepening my understanding of Svelte and its capabilities. `
+      </p>
+      <img src="/kaboom.gif" class="rounded-sm w-full ml-auto mr-auto aspect-video" alt="gif of my confetti website" />
+      <a
+        class="w-fit btn variant-filled-tertiary block ml-auto mr-auto"
+        href="https://github.com/JuanSierra99/you-will-be-mine">Visit Repo</a
+      ></svelte:fragment
+    >
   </AccordionItem>
 
   <AccordionItem>
