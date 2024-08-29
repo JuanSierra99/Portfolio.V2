@@ -33,6 +33,11 @@ const skills: AutocompleteOption<string>[] = [
     keywords: "backend",
   },
   {
+    label: "JSON",
+    value: "json",
+    keywords: "frontend, backend",
+  },
+  {
     label: "Express",
     value: "express",
     keywords: "backend",
@@ -90,6 +95,21 @@ const skills: AutocompleteOption<string>[] = [
   {
     label: "Netlify",
     value: "netlify",
+    keywords: "backend",
+  },
+  {
+    label: "Git",
+    value: "git",
+    keywords: "",
+  },
+  {
+    label: "Github",
+    value: "github",
+    keywords: "",
+  },
+  {
+    label: "Stripe",
+    value: "stripe",
     keywords: "backend",
   },
 ];
