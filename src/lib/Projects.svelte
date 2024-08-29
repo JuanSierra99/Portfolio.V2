@@ -6,7 +6,6 @@
   import IconMoney from "~icons/mdi/money-100";
   import IconDog from "~icons/mdi/dog";
 
-  const contentStyles = "";
   const repoLinkStyles =
     "w-fit btn variant-filled-tertiary block ml-auto mr-auto mt-3";
 </script>
@@ -30,11 +29,6 @@
           class="h-[50px] w-auto absolute translate-y-[-35px] right-0"
           alt="spotted dog with tounge out"
         />
-        <!-- <img
-          src="/hanging_bern.webp"
-          class="h-[50px] w-auto absolute translate-y-[-35px] left-0"
-          alt="brown dog with tounge out"
-        /> -->
         <img
           src="/bucketbuddy-homepage.webp"
           class="rounded-md"
