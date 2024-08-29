@@ -71,7 +71,6 @@ const flavorOptions: AutocompleteOption<string>[] = [
     meta: { healthy: false },
   },
 ];
-
 function onFlavorSelection(
   event: CustomEvent<AutocompleteOption<string>>
 ): void {
