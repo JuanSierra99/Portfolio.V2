@@ -13,13 +13,6 @@
     <strong class="text-gray-400">1</strong> A fullstack developer navigating the
     complex yet beautiful world of web development.
   </p>
-  <!-- <p>
-    <strong class="text-gray-400">2</strong>
-    A first-generation Mexican-American who graduated with distinction from Cal State
-    University, Fullerton, earning a degree in computer science and showcasing a
-    deep passion for the field.
-  </p> -->
-  <h2 class="font-bold text-3xl">Skills</h2>
   <Skills/>
   <h2 class="font-bold text-3xl">Projects</h2>
   <Projects/>
