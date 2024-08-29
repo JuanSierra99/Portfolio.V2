@@ -11,7 +11,7 @@
 </script>
 
 <Accordion>
-  <AccordionItem open>
+  <AccordionItem>
     <svelte:fragment slot="lead"
       ><IconDog class="text-yellow-300" /></svelte:fragment
     >
