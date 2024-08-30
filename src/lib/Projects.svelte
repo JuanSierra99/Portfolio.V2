@@ -15,15 +15,16 @@
   const repoLinkStyles = "w-fit btn bg-tertiary-600 block ml-auto mr-auto mt-3";
 </script>
 
-<img src="/valueglance.webp" class="hidden" alt="Preload Image" />
-<img src="/bucketbuddy-homepage.webp" class="hidden" alt="Preload Image" />
-<!-- <img src="/hanging_spot.webp" class="hidden" alt="Preload Image" /> -->
-<img src="/portfolio.v1.webp" class="hidden" />
-<img src="/octech.webp" class="hidden" />
-<img src="/kaboom.gif" class="hidden" alt="Preload Image" />
-<!-- <img src="/decibel-warrior.webp" class="hidden" alt="Preload Image" /> -->
-<!-- <img src="/film-website.webp" class="hidden" alt="Preload Image" /> -->
-<!-- <img src="/bills-invoices.gif" class="hidden" alt="Preload Image" /> -->
+<img src="/valueglance.webp" class="hidden" alt="Preload" />
+<img src="/bucketbuddy-homepage.webp" class="hidden" alt="Preload" />
+<!-- <img src="/hanging_spot.webp" class="hidden" alt="Preload" /> -->
+<img src="/portfolio.v1.webp" class="hidden"alt="Preload" />
+<img src="/octech.webp" class="hidden" alt="Preload"/>
+<img src="/kaboom.gif" class="hidden" alt="Preload" />
+<img src="/Bargraph.webp" class="hidden" alt="Preload" />
+<img src="/bills-invoices.gif" class="hidden" alt="Preload" />
+<img src="/film-website.webp" class="hidden" alt="Preload" />
+<img src="/decibel-warrior.webp" class="hidden" alt="Preload" />
 
 <Accordion>
   <!-- Value Glance -->
