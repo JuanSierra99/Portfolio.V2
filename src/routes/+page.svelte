@@ -5,7 +5,6 @@
   import Education from "$lib/Education.svelte";
 </script>
 
-<div class="bg-noise">
   <div class="container mx-auto p-8 space-y-8 max-w-3xl">
     <div class="flex w-full justify-between items-center">
       <h1 class="h1">
@@ -24,4 +23,3 @@
     <h2 class="font-bold text-3xl">Education</h2>
     <Education />
   </div>
-</div>
