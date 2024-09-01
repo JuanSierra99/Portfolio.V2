@@ -8,7 +8,7 @@ export default {
 	theme: {
 		extend: {
 		  backgroundImage: {
-			'noise': 'url("noise.svg")',
+			'noise': 'url("/noise.svg")',
 		  },
 		},
 	  },
