@@ -120,15 +120,15 @@
 >
   <div class="mb-1">
     <button
-      class="btn variant-form-material text-xs"
+      class="btn variant-form-material text-xs hover:border-tertiary-600"
       on:click={() => {
-        skillFilter = "frontend";
+        skillFilter = "Frontend";
       }}>Frontend</button
     >
     <button
-      class="btn variant-form-material text-xs"
+      class="btn variant-form-material text-xs hover:border-tertiary-600"
       on:click={() => {
-        skillFilter = "backend";
+        skillFilter = "Backend";
       }}>Backend</button
     >
   </div>
@@ -151,7 +151,7 @@
   <Autocomplete
     bind:input={skillFilter}
     options={skills}
-    regionItem="w-fit text-lg"
+    regionItem="w-fit text-lg hover:scale-110 hover:text-tertiary-500"
     regionList="flex flex-wrap gap-4"
     transitions={false}
   />
