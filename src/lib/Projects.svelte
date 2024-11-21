@@ -9,6 +9,7 @@
   import IconStock from "~icons/mdi/chart-line";
   import IconPeople from "~icons/mdi/people-add";
   import IconRobotLove from "~icons/mdi/robot-love-outline";
+  import Photos from "~icons/mdi/insert-photo";
 
   let accordionRef;
 
@@ -17,9 +18,9 @@
 
 <img src="/valueglance.webp" class="hidden" alt="Preload" />
 <img src="/bucketbuddy-homepage.webp" class="hidden" alt="Preload" />
-<!-- <img src="/hanging_spot.webp" class="hidden" alt="Preload" /> -->
-<img src="/portfolio.v1.webp" class="hidden"alt="Preload" />
-<img src="/octech.webp" class="hidden" alt="Preload"/>
+<img src="/hanging_spot.webp" class="hidden" alt="Preload" />
+<img src="/portfolio.v1.webp" class="hidden" alt="Preload" />
+<img src="/octech.webp" class="hidden" alt="Preload" />
 <img src="/kaboom.gif" class="hidden" alt="Preload" />
 <img src="/Bargraph.webp" class="hidden" alt="Preload" />
 <img src="/bills-invoices.gif" class="hidden" alt="Preload" />
@@ -52,6 +53,52 @@
         alt="Accounting website demo"
       />
       <a class={repoLinkStyles} href="https://valueglance.com/">Visit Site</a>
+    </svelte:fragment>
+  </AccordionItem>
+
+  <!-- Film Gallery -->
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><Photos class="text-orange-500" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">Film Gallery</svelte:fragment>
+    <svelte:fragment slot="content">
+      <div class="space-y-3">
+        <iframe
+          src="https://www.youtube.com/embed/YoCZMrxlgOk"
+          title="film gallery demo"
+        >
+        </iframe>
+        <p>
+          This project is a Svelte x Nginx website where I showcase my film
+          photography in a beautiful and engaging format. While building it, I
+          explored ways to improve performance when running the site locally
+          without compressing or converting my original .jpg images.
+        </p>
+        <p>
+          In this demo, I share some of the strategies I used, like loading
+          low-res versions of the images during the initial load to avoid
+          overwhelming the browser with high-res downloads all at once. I also
+          implemented the lazy attribute on {"<img />"} elements and used Intersection
+          Observer to dynamically load high-res images as they come into view.
+        </p>
+        <p>
+          To further optimize, I configured Nginx to enable browser caching for
+          the images, ensuring that they load instantly on subsequent visits.
+          This combination of techniques creates a seamless experience while
+          preserving the quality of my work.
+        </p>
+        <p>
+          Finally, I explore additional possibilities, such as converting my
+          images to WebP format to significantly reduce file sizes, while
+          keeping it's quality, or implementing a loading screen to enhance the
+          user experience while high-resolution images are being loaded.
+        </p>
+      </div>
+      <a
+        class={repoLinkStyles}
+        href="https://www.youtube.com/watch?v=YoCZMrxlgOk">Youtube</a
+      >
     </svelte:fragment>
   </AccordionItem>
 
@@ -265,3 +312,10 @@
     </svelte:fragment>
   </AccordionItem>
 </Accordion>
+
+<style>
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+</style>
