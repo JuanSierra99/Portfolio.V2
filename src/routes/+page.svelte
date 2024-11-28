@@ -3,6 +3,7 @@
   import Projects from "$lib/Projects.svelte";
   import Skills from "$lib/Skills.svelte";
   import Education from "$lib/Education.svelte";
+  import About from "$lib/About.svelte";
 </script>
 
 <div>
@@ -22,11 +23,13 @@
       <strong class="text-gray-400">1.</strong> A fullstack developer navigating
       the complex yet beautiful world of web development.
     </p>
-    <h2 class="font-bold text-3xl">Skills</h2>
-    <Skills />
     <h2 class="font-bold text-3xl">Projects</h2>
     <Projects />
+    <h2 class="font-bold text-3xl">Skills</h2>
+    <Skills />
     <h2 class="font-bold text-3xl">Education</h2>
     <Education />
+    <h2 class="font-bold text-3xl">About</h2>
+    <About />
   </div>
 </div>
