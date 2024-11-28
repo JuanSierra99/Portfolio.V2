@@ -10,10 +10,17 @@
       <h1 class="h1">
         <span class=""> Juan </span>
       </h1>
-      <Avatar src="/juan.png" class="inline" />
+      <div>
+        <h1 class="h1">Juan</h1>
+        <span class="text-gray-400 text-lg">/who-wahn/</span>
+      </div>
+
+      <Avatar
+        src="/juan.png"
+        class="inline placeholder-circle w-16"
+      />
     </div>
     <p>
-      <strong class="text-gray-400">1</strong> A fullstack developer navigating the
       complex yet beautiful world of web development.
     </p>
     <h2 class="font-bold text-3xl">Skills</h2>
