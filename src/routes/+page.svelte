@@ -5,11 +5,9 @@
   import Education from "$lib/Education.svelte";
 </script>
 
+<div>
   <div class="container mx-auto p-8 space-y-8 max-w-3xl">
     <div class="flex w-full justify-between items-center">
-      <h1 class="h1">
-        <span class=""> Juan </span>
-      </h1>
       <div>
         <h1 class="h1">Juan</h1>
         <span class="text-gray-400 text-lg">/who-wahn/</span>
@@ -21,7 +19,8 @@
       />
     </div>
     <p>
-      complex yet beautiful world of web development.
+      <strong class="text-gray-400">1.</strong> A fullstack developer navigating
+      the complex yet beautiful world of web development.
     </p>
     <h2 class="font-bold text-3xl">Skills</h2>
     <Skills />
@@ -30,3 +29,4 @@
     <h2 class="font-bold text-3xl">Education</h2>
     <Education />
   </div>
+</div>
