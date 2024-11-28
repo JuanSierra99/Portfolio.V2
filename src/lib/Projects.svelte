@@ -27,6 +27,7 @@
 <img src="/film-website.webp" class="hidden" alt="Preload" />
 <img src="/decibel-warrior.webp" class="hidden" alt="Preload" />
 
+
 <Accordion>
   <!-- Value Glance -->
   <AccordionItem>
@@ -110,13 +111,16 @@
     <svelte:fragment slot="summary">Bucket Buddy</svelte:fragment>
     <svelte:fragment slot="content">
       <p>
-        A Fullstack project that allows users to organize their life by giving
-        them a simple way to create lists that can help them keep track of tasks
-        they would like to complete. Bucket Buddy is designed to help
-        individuals who struggle with managing their goals. This is the recent
-        redesign of the landing page, though i can't host it on my EC2 server
-        right now because i can't afford to let Jeff Bezos take whatever money i
-        have left.
+        A fullstack application built with React, PostgreSQL, CSS, JavaScript,
+        Nginx, Express, and Amazon EC2, designed to help users organize their
+        lives by creating and managing task lists. The backend leverages
+        PostgreSQL with a relational database structure, including tables for
+        users, tasks, rows, columns, and cell data. I implemented unique
+        constraints, composite keys, and relationships to ensure data integrity,
+        enabling seamless mapping of users to their custom tables and tasks. The
+        Node.js express API is deployed on an Amazon EC2 instance, with Nginx
+        serving as both a reverse proxy and a web server, all hosted on the same
+        instance to ensure efficient and scalable performance.
       </p>
       <div class="relative pt-5">
         <img
@@ -129,11 +133,41 @@
           class="rounded-md"
           alt="bucket buddy website homepage"
         />
-        <a
+        <!-- <a
           class={repoLinkStyles}
           href="https://github.com/JuanSierra99/BucketBuddy">Visit Repo</a
+        > -->
+        <a
+          class={repoLinkStyles}
+          href="https://docs.google.com/document/d/15YpUWI64oTwVwcvMO3RLJLQcWpolMj2R4tq6MY3aZKM/edit?tab=t.0"
         >
+          View Docs
+        </a>
       </div>
+    </svelte:fragment>
+  </AccordionItem>
+
+  <!-- AI FILM SITE -->
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconCamera class="text-purple-400" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">AI Film Site</svelte:fragment>
+    <svelte:fragment slot="content">
+      <span>
+        A web app for maintaining a collection of your favorite film photos. The
+        custom api is built with python and uses machine learning for object
+        recognition, Numpy for image masking, and openai api for image editing
+        using artifical intelligence. Simple to use, and pleasent to view.
+      </span>
+      <img
+        src="/film-website.webp"
+        class="rounded-md"
+        alt="film gallery website"
+      />
+      <a class={repoLinkStyles} href="https://github.com/JuanSierra99/Film-Site"
+        >Visit Repo</a
+      >
     </svelte:fragment>
   </AccordionItem>
 
@@ -147,8 +181,8 @@
       <span class="">
         I wanted to stick with just HTML, CSS, and JavaScript for this one. It
         was a great learning experience, and I had so much designing it all from
-        scratch. It also made me appreciate why frameworks are so
-        handy—components are awesome and way more readable!
+        scratch. It also made me appreciate why frameworks are so handy,
+        components are awesome and way more readable!
       </span>
       <img
         src="/portfolio.v1.webp"
@@ -166,7 +200,7 @@
     <svelte:fragment slot="lead"
       ><IconPeople class="text-[#eae2b7]" /></svelte:fragment
     >
-    <svelte:fragment slot="summary">OC Tech</svelte:fragment>
+    <svelte:fragment slot="summary">Orange County Tech</svelte:fragment>
     <svelte:fragment slot="content">
       <span class=""
         >Designed and developed with WordPress, this landing page features a
@@ -258,30 +292,6 @@
       <a
         class={repoLinkStyles}
         href="https://github.com/JuanSierra99/Accounting-Website">Visit Repo</a
-      >
-    </svelte:fragment>
-  </AccordionItem>
-
-  <!-- AI FILM SITE -->
-  <AccordionItem>
-    <svelte:fragment slot="lead"
-      ><IconCamera class="text-purple-400" /></svelte:fragment
-    >
-    <svelte:fragment slot="summary">AI Film Site</svelte:fragment>
-    <svelte:fragment slot="content">
-      <span class="">
-        A web app for maintaining a collection of your favorite film photos. The
-        custom api is built with python and uses machine learning for object
-        recognition, Numpy for image masking, and openai api for image editing
-        using artifical intelligence. Simple to use, and pleasent to view.
-      </span>
-      <img
-        src="/film-website.webp"
-        class="rounded-md"
-        alt="film gallery website"
-      />
-      <a class={repoLinkStyles} href="https://github.com/JuanSierra99/Film-Site"
-        >Visit Repo</a
       >
     </svelte:fragment>
   </AccordionItem>
