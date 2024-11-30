@@ -7,7 +7,7 @@
 <div>
   <div class="flex w-full gap-2 sm:gap-4 mb-4 font-bold">
     <label
-      class="variant-glass-surface active:scale-105 text-lg {val === 'traits'
+      class="variant-glass-surface active:scale-105 {val === 'traits'
         ? 'text-tertiary-400'
         : ''}"
       for="traits"
@@ -20,7 +20,7 @@
       /></label
     >
     <label
-      class="variant-glass-surface active:scale-105 text-lg {val === 'hobbies'
+      class="variant-glass-surface active:scale-105 {val === 'hobbies'
         ? 'text-tertiary-400'
         : ''}"
       for="hobbies"
