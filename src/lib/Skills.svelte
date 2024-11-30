@@ -140,7 +140,7 @@
       bind:value={skillFilter}
     />
     <button
-      class="hover:text-red-400 h-fit mr-2"
+      class="hover:text-red-500 h-fit mr-2"
       on:click={() => {
         skillFilter = "";
       }}
@@ -151,7 +151,7 @@
   <Autocomplete
     bind:input={skillFilter}
     options={skills}
-    regionItem="w-fit text-lg hover:scale-110 hover:text-tertiary-500"
+    regionItem="w-fit text-lg hover:scale-110 hover:text-tertiary-400"
     regionList="flex flex-wrap gap-4"
     transitions={false}
   />
