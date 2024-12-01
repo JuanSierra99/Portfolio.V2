@@ -1,6 +1,7 @@
 <script>
   import { fade } from "svelte/transition";
   import Image from "./Image.svelte";
+  import IconTouch from "~icons/mdi/gesture-touch";
   let val = "traits";
 </script>
 
@@ -35,32 +36,37 @@
   </div>
 
   {#if val === "traits"}
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" in:fade>
-      <Image
-        src="blue-flowers.jpeg"
-        alt="A film photo of blue flowers"
-        title="Film photo of blue flowers"
-        text="Film photography is a passion of mine. I try to capture moments and things that i find to be beautiful."
-      />
+    <div>
+      <div class="text-center mb-2 text-tertiary-400">
+        <span class="inline">Hover</span><IconTouch class="inline" />
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" in:fade>
+        <Image
+          src="blue-flowers.jpeg"
+          alt="A film photo of blue flowers"
+          title="Film photo of blue flowers"
+          text="Film photography is a passion of mine. I try to capture moments and things that i find to be beautiful."
+        />
 
-      <Image
-        src="puppy.jpeg"
-        alt="A small brown dog laying down in the grass. It has short fur, and it is layind down next to a chewed plastic bottle."
-        title="oaxca dog"
-        text="I hold a special place in my heart for animals, and I have rescued several dogs throughout the years. A moment I am grateful for is being able to play fetch with a stray pup I met in Mexico."
-      />
-      <Image
-        src="ice-cream.jpeg"
-        alt="Holding up an ice cream cone"
-        title="i scream for ice cream"
-        text="I love traveling, ice cream, and spending time with my family. It's such a great feeling when all that is combined into one moment."
-      />
-      <Image
-        src="garden.jpeg"
-        alt="A path down a botanical garden"
-        title="walking down the botanical garden"
-        text="I find peace in nature, especially national parks. I love listening to the chirps of birds and smelling the plants around me, especially after a rainy day."
-      />
+        <Image
+          src="puppy.jpeg"
+          alt="A small brown dog laying down in the grass. It has short fur, and it is layind down next to a chewed plastic bottle."
+          title="oaxca dog"
+          text="I hold a special place in my heart for animals, and I have rescued several dogs throughout the years. A moment I am grateful for is being able to play fetch with a stray pup I met in Mexico."
+        />
+        <Image
+          src="ice-cream.jpeg"
+          alt="Holding up an ice cream cone"
+          title="i scream for ice cream"
+          text="I love traveling, ice cream, and spending time with my family. It's such a great feeling when all that is combined into one moment."
+        />
+        <Image
+          src="garden.jpeg"
+          alt="A path down a botanical garden"
+          title="walking down the botanical garden"
+          text="I find peace in nature, especially national parks. I love listening to the chirps of birds and smelling the plants around me, especially after a rainy day."
+        />
+      </div>
     </div>
   {/if}
 
