@@ -15,7 +15,7 @@
         <span class="text-gray-400 text-lg">/who-wahn/</span>
       </div>
 
-      <Avatar src="/juan.png" class="inline placeholder-circle w-16" />
+      <Avatar src="/juan.webp" class="inline placeholder-circle w-16" />
     </div>
 
     <p>
