@@ -7,17 +7,18 @@
 </script>
 
 <div>
-  
   <div class="container mx-auto p-8 space-y-8 max-w-3xl">
     <div class="flex w-full justify-between items-center">
       <div>
         <h1 class="h1">Juan</h1>
         <span class="text-gray-400 text-lg">/who-wahn/</span>
       </div>
-
-      <Avatar src="/juan.webp" class="inline placeholder-circle w-16" />
+      <Avatar
+        src="/juan.webp"
+        class="inline placeholder-circle w-16"
+        alt="Juan Sierra Portrait"
+      />
     </div>
-
     <p>
       <strong class="text-gray-400">1.</strong> A fullstack developer navigating
       the complex yet beautiful world of web development.
