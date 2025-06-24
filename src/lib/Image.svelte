@@ -33,10 +33,7 @@
       width: 100%;
       height: 100%;
       text-align: center;
-      transition:
-        transform 0.4s ease-in,
-        opacity 0.3s ease-in;
-      transform: translateY(100%);
+      transition: opacity 0.4s ease-in;
       opacity: 0;
       background-color: rgb(155, 3, 5);
       color: wheat;
@@ -48,7 +45,6 @@
     }
   
     .card:hover .popup-text {
-      transform: translateY(0);
       opacity: 1;
     }
   </style>
