@@ -48,9 +48,7 @@
         development environment, a framework for a lightweight Single Page
         Application, and routing for the various pages. SvelteKit also had a
         Netlify adapter so that I could easily deploy and build my application
-        on their platform for hosting. I then went through available domain
-        names on Porkbun and listed them to my client so they could choose the
-        site name that most resonated with them. The client also requested for
+        on their platform for hosting. The client also requested for
         the site to have RSVP functionality, which I implemented using the
         Rsvpify service. This provided guests with email notifcations and
         reminders for the wedding, and provided my client with essential RSVP
