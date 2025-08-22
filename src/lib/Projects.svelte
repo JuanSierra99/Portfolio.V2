@@ -10,6 +10,7 @@
   import IconPeople from "~icons/mdi/people-add";
   import IconRobotLove from "~icons/mdi/robot-love-outline";
   import Photos from "~icons/mdi/insert-photo";
+  import IconRing from "~icons/mdi/ring";
 
   let accordionRef;
 
@@ -26,9 +27,46 @@
 <img src="/bills-invoices.gif" class="hidden" alt="Preload" />
 <img src="/film-website.webp" class="hidden" alt="Preload" />
 <img src="/decibel-warrior.webp" class="hidden" alt="Preload" />
-
+<img src="losdeleon.webp" class="hidden" , alt="preload" />
 
 <Accordion>
+  <!-- Wedding Website -->
+  <AccordionItem>
+    <svelte:fragment slot="lead"
+      ><IconRing class="text-sky-300" /></svelte:fragment
+    >
+    <svelte:fragment slot="summary">Los Deleon</svelte:fragment>
+    <svelte:fragment slot="content">
+      <p>
+        This was a freelance project in which I designed, developed, and
+        deployed a wedding website for my client's big day. I collaborated
+        closely with the client to adapt to evolving designs and requirements.
+        Figma was used prior to development to introduce various design concepts
+        and ideas to my client, as well as to help understand what wedding
+        information would be provided for the guests. I began to develop the
+        project using Vite and SvelteKit, which provided me with a local
+        development environment, a framework for a lightweight Single Page
+        Application, and routing for the various pages. SvelteKit also had a
+        Netlify adapter so that I could easily deploy and build my application
+        on their platform for hosting. I then went through available domain
+        names on Porkbun and listed them to my client so they could choose the
+        site name that most resonated with them. The client also requested for
+        the site to have RSVP functionality, which I implemented using the
+        Rsvpify service. This provided guests with email notifcations and
+        reminders for the wedding, and provided my client with essential RSVP
+        data from the guests which was used for planning. I followed best web
+        practices such as semantic HTML, web accessibility, lazy loading,
+        responsive design, image compression, and more.
+      </p>
+      <img
+        src="losdeleon.webp"
+        class="rounded-md"
+        alt="Accounting website demo"
+      />
+      <a class={repoLinkStyles} href="https://losdeleon.com/">Visit Site</a>
+    </svelte:fragment>
+  </AccordionItem>
+
   <!-- Value Glance -->
   <AccordionItem>
     <svelte:fragment slot="lead"
