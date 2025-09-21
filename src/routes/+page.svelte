@@ -29,7 +29,7 @@
     <Skills />
     <h2 class="font-bold text-3xl">Education</h2>
     <Education />
-    <h2 class="font-bold text-3xl">About</h2>
-    <About />
+    <!-- <h2 class="font-bold text-3xl">About</h2> -->
+    <!-- <About /> -->
   </div>
 </div>
